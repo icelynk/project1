@@ -1,0 +1,12 @@
+{
+  "name": "project1",
+  "main": "src/index.html",
+  "scripts":{
+    "start": "node server.js"
+  },
+ 
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  }
+}
