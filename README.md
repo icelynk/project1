@@ -1,2 +1,2 @@
-# project1
-sample photography website
+# Project1
+Sample photography website
