@@ -2,7 +2,8 @@
 
 :root {
     --background-color-dark: black;
-    --background-text-color-dark: white;
+    --dark-background-text-color: white;
+    --dark-background-text-color-hover: #cccccc; 
 }
 
 html, body {
@@ -31,10 +32,12 @@ html, body {
     flex-direction: column;
     flex-grow: inherit;
     font-size: 110%;
+    margin: 0px auto;
     text-align: center;
     width: 600px;
 }
 .pricing-table-row {
+    background-color: #ffffff;
     border: #272525 1px solid;
     display: flex;
     flex-direction: row;
@@ -52,13 +55,20 @@ html, body {
     flex: 0 1 50%;
     padding: 20px;
 }
+.pricing-table-content ol,
+.pricing-table-content ul {
+    margin-bottom: 20px;
+}
+tr:hover {
+    background-color: #0909f0;
+}
 #navbar {
     background: var(--background-color-dark);
     display: flex;
     justify-content: space-between;
 }
 #navbar a {
-    color: var(--background-text-color-dark);
+    color: var(--dark-background-text-color);
     display: inline-block;
     padding: 10px;
     text-decoration: none;
@@ -120,12 +130,20 @@ main {
 
 /*typography*/
 
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+a:hover {
+    color: #990000;
+}
 p {
     color: #1d1c1c;
     font-size: 160%;
 }
 .important {
-    border-color: #46054e;
+    border-color: #100411;
+    border-radius: 40px;
     border-style: solid;
     border-width: 5px;
     padding-left: 10%;
@@ -141,6 +159,7 @@ p {
 }
 .ul {
     font-size: 120%;
+    padding-left: 20%;
 }
 .warning {
     color: #000000;
@@ -202,13 +221,14 @@ p {
 
 /*links*/
 
+}
 a {
     text-decoration: none;
 }
 footer {
     align-items: center;
     background-color: var(--background-color-dark);
-    color: var(--background-text-color-dark);
+    color: var(--dark-background-text-color);
 	display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -219,12 +239,13 @@ footer {
     width: calc(100% - 40px);
 }
 footer a {
-    color: var(--background-text-color-dark);
+    color: var(--dark-background-text-color);
     text-decoration: none;
 }
 footer a:hover {
+    color: var(--dark-background-text-color-hover);
     text-decoration: underline; 
 }
 footer p {
-    color: var(--background-text-color-dark); 
+    color: var(--dark-background-text-color); 
 }
