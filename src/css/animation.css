@@ -1,0 +1,87 @@
+#example1 {
+    background-color: #545454;
+    height: 180px;
+    transition-duration: 1000ms;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    width: 180px;
+}
+#example1:hover {
+    background-color: #6b1818; 
+    height: 100px;
+    width: 200px;
+}
+#example2 {
+    background: linear-gradient(#333333, #111111);
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    color: #ffffff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: ease-in-out all 200ms;
+    width: 100px;
+}
+#example2:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+@keyframes expand {
+    from {
+        width: 100px;
+    }
+    to {
+        width: 200px;
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+    #example3 {
+    background-color: #545454;
+    height: 100px;
+    width: 100px;
+}
+#example3:hover {
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-name: expand;
+    animation-timing-function: ease-in-out;
+}
+#example4 {
+    background-color: #545454;
+    border-top: #6b1818 5px solid;
+    height: 100px;
+    transform: rotate(0deg);
+    width: 100px;
+}
+#example4:hover {
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    animation-name: expand, rotate;
+    animation-timing-function: ease-in-out;
+}
+#example5 {
+    background-color: #545454;
+    border-top: #6b1818 5px solid;
+    height: 100px;
+    transform: rotate(0deg);
+    width: 100px;
+}
+#example5:hover {
+    animation-delay: 0ms, 1000ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-name: expand, rotate;
+    animation-timing-function: ease-in-out;
+}
