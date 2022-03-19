@@ -1,5 +1,5 @@
 #example1 {
-    background-color: #79766a;
+    background-color: #40e6f1;
     height: 180px;
     transition-duration: 1000ms;
     transition-property: all;
@@ -167,4 +167,6 @@
     animation-duration:2000ms;
     animation-name: bouncein, expand, rotate;
     animation-timing-function: ease-in-out;
+    background-color: #3b031e;
+    border: 10px #2913f1 solid;
 }
