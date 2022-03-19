@@ -145,12 +145,26 @@
 #example8 {
     background-color: #fceb08;
     border: 10px #000000 solid;
-    height: 200px;
+    height: 120px;
     text-align: center;
-    width: 200px;
+    width: 120px;
 }
 #example8:hover {
     animation-duration:2000ms;
     animation-name: bouncein;
+    animation-timing-function: ease-in-out;
+}
+#example9 {
+    background-color: #64e7b5;
+    border: 10px #ff2cdc solid;
+    border-radius: 20%;
+    height: 100px;
+    text-align: center;
+    width: 100px;
+}
+#example9:hover {
+    animation-delay: 0s, 1000ms, 1000ms;
+    animation-duration:2000ms;
+    animation-name: bouncein, expand, rotate;
     animation-timing-function: ease-in-out;
 }
