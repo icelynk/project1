@@ -1,5 +1,5 @@
 #example1 {
-    background-color: #545454;
+    background-color: #79766a;
     height: 180px;
     transition-duration: 1000ms;
     transition-property: all;
@@ -7,7 +7,7 @@
     width: 180px;
 }
 #example1:hover {
-    background-color: #6b1818; 
+    background-color: #3112e0; 
     height: 100px;
     width: 200px;
 }
@@ -43,11 +43,52 @@
         transform: rotate(360deg);
     }
 }
+@keyframes bounce {
+    0% { 
+        transform: translateY(0);
+    }
+    25%, 75% { 
+        transform: translateY(-50%);
+    }
+    50% { 
+        transform: translateY(-20%);
+    }
+    100% { 
+        transform: translateY(0);
+    }
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        max-width: fit-content;
+    }
+}
+@-webkit-keyframes bounce {
+    0%       { bottom:5px; }
+    25%, 75% { bottom:15px; }
+    50%      { bottom:20px; }
+    100%     { bottom:0;}
+}
+@keyframes bouncein {
+    0% {
+        transform: scale(0.1);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 
 
-    #example3 {
+#example3 {
     background-color: #545454;
     height: 100px;
     width: 100px;
@@ -83,5 +124,33 @@
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
     animation-name: expand, rotate;
+    animation-timing-function: ease-in-out;
+}
+#example6 {
+    -webkit-animation: bounce 1s infinite;
+    animation-delay: 300ms;
+    animation-duration: infinite;
+    animation-timing-function: ease-in-out;
+    background-color: #3112e0;
+    border: 10px #000000 solid;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+#example7 {
+    animation-duration: 5000ms;
+    animation-name: slidein;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+#example8 {
+    background-color: #fceb08;
+    border: 10px #000000 solid;
+    height: 200px;
+    text-align: center;
+    width: 200px;
+}
+#example8:hover {
+    animation-duration:2000ms;
+    animation-name: bouncein;
     animation-timing-function: ease-in-out;
 }
