@@ -1,251 +1,268 @@
 /*theme*/
 
 :root {
-    --background-color-dark: black;
-    --dark-background-text-color: white;
-    --dark-background-text-color-hover: #cccccc; 
+  --background-color-dark: black;
+  --dark-background-text-color: white;
+  --dark-background-text-color-hover: #cccccc;
 }
 
-html, body {
-    background-color: #f5eded;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  background-color: #f5eded;
+  margin: 0;
+  padding: 0;
 }
 .box {
-    background-color: #282927;
-    border: 5px black solid;
-    border-radius: 40px;
-    color: #fffafa;
-    display: block;
-    height: 100%;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    width: 50%;
-}    
+  background-color: #282927;
+  border: 5px black solid;
+  border-radius: 40px;
+  color: #fffafa;
+  display: block;
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
 .container {
-    display: inline-flex;
+  display: inline-flex;
 }
 .pricing-table {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-grow: inherit;
-    font-size: 110%;
-    margin: 0px auto;
-    text-align: center;
-    width: 600px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: inherit;
+  font-size: 110%;
+  margin: 0px auto;
+  text-align: center;
+  width: 600px;
 }
 .pricing-table-row {
-    background-color: #ffffff;
-    border: #272525 1px solid;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
+  background-color: #ffffff;
+  border: #272525 1px solid;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
 }
 .pricing-table-heading {
-    background-color: #000000;
-    color: #ffffff;
-    flex: 1 1 50%;
-    margin: 0;
-    padding: 20px;
-    width: 50%;
+  background-color: #000000;
+  color: #ffffff;
+  flex: 1 1 50%;
+  margin: 0;
+  padding: 20px;
+  width: 50%;
 }
 .pricing-table-content {
-    flex: 0 1 50%;
-    padding: 20px;
+  flex: 0 1 50%;
+  padding: 20px;
 }
 .pricing-table-content ol,
 .pricing-table-content ul {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 tr:hover {
-    background-color: #0909f0;
+  background-color: #0909f0;
 }
 #navbar {
-    background: var(--background-color-dark);
-    display: flex;
-    justify-content: space-between;
+  background: var(--background-color-dark);
+  display: flex;
+  justify-content: space-between;
 }
 #navbar a {
-    color: var(--dark-background-text-color);
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
+  color: var(--dark-background-text-color);
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
 }
-#navbar a:hover
-{
-    background: rgb(46, 44, 44);
+#navbar a:hover {
+  background: rgb(46, 44, 44);
 }
 #navbar .active {
-    background:white;
-    color:black;
+  background: white;
+  color: black;
 }
 main {
-    margin: 0px auto;
-    max-width: 1020px;
-    padding: 40px 20px; 
+  margin: 0px auto;
+  max-width: 1020px;
+  padding: 40px 20px;
 }
 
 /*hero*/
 #hero {
-    background: url("../images/hero.jpg") no-repeat center center;
-    height: 700px;
-    width: 100%;
+  background: url("../images/hero.jpg") no-repeat center center;
+  height: 700px;
+  width: 100%;
 }
 #hero > div {
-    margin: 0px auto;
-    max-width: 1020px;
-    padding: 100px 20px;
+  margin: 0px auto;
+  max-width: 1020px;
+  padding: 100px 20px;
 }
 #hero h1 {
-    color: white;
-    font-size: 72px;
-    text-align: center;
+  color: white;
+  font-size: 72px;
+  text-align: center;
 }
 #hero-cta {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto auto;
-    margin: 0px auto;
-    width: 300px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  margin: 0px auto;
+  width: 300px;
 }
 .button {
-    background: rgba(50, 50, 50, 0.75);
-    border-radius: 5px;
-    color: white;
-    padding: 10px 0px;
-    text-align: center;
-    text-decoration: none;
+  background: rgba(50, 50, 50, 0.75);
+  border-radius: 5px;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
 }
 .button:hover {
-    background: rgba(50, 50, 50, 1);
+  background: rgba(50, 50, 50, 1);
 }
 .button.primary {
-    background: rgba(60, 230, 200, 0.75);
+  background: rgba(60, 230, 200, 0.75);
 }
 .button.primary:hover {
-    background: rgba(60, 230, 200, 1);
+  background: rgba(60, 230, 200, 1);
 }
 
 /*typography*/
 
 a {
-    color: #ff0000;
-    text-decoration: none;
+  color: #ff0000;
+  text-decoration: none;
 }
 a:hover {
-    color: #990000;
+  color: #990000;
 }
 p {
-    color: #1d1c1c;
-    font-size: 160%;
+  color: #1d1c1c;
+  font-size: 160%;
 }
 .important {
-    border-color: #100411;
-    border-radius: 40px;
-    border-style: solid;
-    border-width: 5px;
-    padding-left: 10%;
+  border-color: #100411;
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 5px;
+  padding-left: 10%;
 }
 .important2 {
-    border-color: #030103;
-    border-style: double;
-    border-width: 5px;
-    padding-left: 20%;
+  border-color: #030103;
+  border-style: double;
+  border-width: 5px;
+  padding-left: 20%;
 }
 #test1 {
-    color:#0909f0;
+  color: #0909f0;
 }
 .ul {
-    font-size: 120%;
-    padding-left: 20%;
+  font-size: 120%;
+  padding-left: 20%;
 }
 .warning {
-    color: #000000;
-    background:#ffa500;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    
+  color: #000000;
+  background: #ffa500;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 /*gallery*/
 
 #contact-wrapping {
-    background: url(../images/contacts.jpg) no-repeat center center;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
+  background: url(../images/contacts.jpg) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
 }
+
 .gallery {
-    display: inline-grid;
-    gap: 20px;
-    grid-template-columns: auto auto auto;
+  display: inline-grid;
+  gap: 20px;
+  grid-template-columns: auto;
+  width: 100%;
 }
+
 .gallery img {
-    border-radius: 20px;
+  border-radius: 20px;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 860px) and (max-width: 1020px) {
+  .gallery {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 1020px) {
+  .gallery {
+    grid-template-columns: auto auto auto;
+  }
+
+  .gallery img {
     height: 200px;
     object-fit: fill;
-    width: 100%;
+  }
 }
 #gallery1 {
-    border-radius: 20px;
-    display: block;
-    height: 300px;
-    margin: auto;
-    object-fit: scale-down;
-    width: 700px;
+  border-radius: 20px;
+  display: block;
+  height: 300px;
+  margin: auto;
+  object-fit: scale-down;
+  width: 700px;
 }
 #gallery2 {
-    border-radius:  30px;
-    display: block;
-    height: 400px;
-    margin: auto;
-    width: 700px;
+  border-radius: 30px;
+  display: block;
+  height: 400px;
+  margin: auto;
+  width: 700px;
 }
 #gallery3 {
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
 }
 #gallery4 {
-    display: inline-block;
+  display: inline-block;
 }
 #pricing-wrapper {
-    background: url("../images/background.jpg") no-repeat center center; 
-    background-size: cover;
-    width: 100%;
+  background: url("../images/background.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
 }
 
 /*links*/
 
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 footer {
-    align-items: center;
-    background-color: var(--background-color-dark);
-    color: var(--dark-background-text-color);
-	display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-    width: calc(100% - 40px);
+  align-items: center;
+  background-color: var(--background-color-dark);
+  color: var(--dark-background-text-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  width: calc(100% - 40px);
 }
 footer a {
-    color: var(--dark-background-text-color);
-    text-decoration: none;
+  color: var(--dark-background-text-color);
+  text-decoration: none;
 }
 footer a:hover {
-    color: var(--dark-background-text-color-hover);
-    text-decoration: underline; 
+  color: var(--dark-background-text-color-hover);
+  text-decoration: underline;
 }
 footer p {
-    color: var(--dark-background-text-color); 
+  color: var(--dark-background-text-color);
 }
