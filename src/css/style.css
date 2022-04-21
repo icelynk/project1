@@ -29,6 +29,9 @@ body {
 .container {
   display: inline-flex;
 }
+.container2 {
+  padding-right: 40%;
+}
 .pricing-table {
   align-content: center;
   display: flex;
